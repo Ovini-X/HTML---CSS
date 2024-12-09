@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping of tags</title>
+    <style>
+        /* Configura o estilo do body */
+        body {
+            /* Fonte usada */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Cor de fundo do body */
+            background-color: dimgray;
+            /* Margens do body */
+            margin: 0px;
+        }
+
+        /* Configura o estilo do header */
+        header {
+            /* Cor de fundo do header */
+            background-color: gray;
+            /* Padding do header */
+            padding: 10px;
+            /* Margens do header */
+            margin: 10px;
+            /* Alinhamento do texto */
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Configura o estilo do nav */
+        nav {
+            /* Cor de fundo do nav */
+            background-color: rgb(102, 102, 102);
+            /* Padding do nav */
+            padding: 3px;
+            /* Sombra do nav */
+            box-shadow: 5px 6px 4px 1px rgba(0, 0, 0, 0.315);
+            border-radius: 10px;
+        }
+
+        /* Configura o estilo das ancoras do nav */
+        nav > a {
+            /* Remove a decoração da ancora */
+            text-decoration: none;
+            /* Cor do texto */
+            color: white;
+            /* Fonte em negrito */
+            font-weight: bold;
+            /* Espacamento entre as ancoras */
+            margin-right: 30px;
+        }
+
+        /* Configura o estilo das ancoras do nav em hover */
+        nav > a:hover {
+            /* Adiciona uma decora o de underline */
+            text-decoration: underline;
+        }
+
+        /* Configura o estilo do main */
+        main {
+            /* Cor de fundo do main */
+            background-color: white;
+            /* Padding do main */
+            padding: 10px;
+            /* Margens do main */
+            margin: 10px;
+            /* Borda arredondada */
+            border-radius: 10px 30px;
+            /* Sombra do main */
+            box-shadow: 5px 6px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        /* Configura o estilo do article */
+        article {
+            /* Cor de fundo do article */
+            background-color: lightgray;
+            /* Padding do article */
+            padding: 5px;
+            border-radius: 5px ;
+        }
+
+        /* Configura o estilo do aside */
+        article > aside {
+            /* Cor de fundo do aside */
+            background-color: rgb(165, 165, 165);
+        }
+
+        /* Configura o estilo do footer */
+        footer {
+            /* Cor de fundo do footer */
+            background-color: black;
+            /* Cor do texto */
+            color: white;
+            /* Alinhamento do texto */
+            text-align: center;
+            /* Padding do footer */
+            padding: 4px;
+            /* Margens do footer */
+            margin: 0px;
+        }
+
+        /* Configura o estilo do paragrafo do footer */
+        footer > p {
+            /* Margens do paragrafo */
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Cabeçalho do site com um titulo e um menu de navega o.
+        O menu de navega o tem quatro links.
+    -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!--
+        Area principal do site.
+        Tem uma se o de assuntos e uma se o de noticias.
+    -->
+    <main>
+        <!--
+            Setor de assuntos.
+            Tem um paragrafo com tres palavras.
+        -->
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <!--
+            Setor de noticias.
+            Tem dois artigos.
+        -->
+        <section id="noticias">
+            <!--
+                Primeiro artigo.
+                Tem um titulo, um paragrafo e um autor.
+            -->
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aperiam. Quae, non. Quia, officia. Voluptatum, quae. Facere, quae. Quae, non. Quia, officia. Voluptatum, quae.</p>
+                <aside>
+                    <p>Artigo escrito por Jose</p>
+                </aside>
+            </article>
+            <!--
+                Segundo artigo.
+                Tem um titulo, um paragrafo e um autor.
+            -->
+            <article>
+                <h2>Noticia sobre o Roma</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aperiam. Quae, non. Quia, officia. Voluptatum, quae. Facere, quae. Quae, non. Quia, officia. Voluptatum, quae.</p>
+                <aside>
+                    <p>Artigo escrito por Jose</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <!--
+        Rodape do site.
+        Tem um paragrafo com o copyright.
+    -->
+    <footer>
+        <p>&copy; 2024 - Meu site</p>
+    </footer>
+</body>
+</html>
+

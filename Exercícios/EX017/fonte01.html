@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+        body {
+            font-family: "Work Sans Script", sans-serif;
+            text-align: justify;
+            font-size: 1.4em;
+            font-weight: normal;
+            font-style: oblique;
+            text-transform: full-width;
+        }
+        /* 
+        Medidas Absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas Relativas
+        em, ex, rem, vw, vh, %
+        16px geralmente = 1em
+        */
+        h1 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            Essa ordem é importante!
+
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+        }
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalho com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum! Quos, atque. Quos, quae? Quos, quia! Quos, quae? Quos, quia! Quos, quae? Quos, quia! Quos, quae? Quos, quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum! Quos, atque. Quos, quae? Quos, quia! Quos, quae? Quos, quia! Quos, quae? Quos, quia! Quos, quae? Quos, quia!</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, assumenda. Aliquid, pariatur explicabo! Porro ad quas voluptas dicta vitae labore molestiae aut repellat voluptates rerum, deserunt inventore culpa dolor explicabo?</p>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo de caixa</title>
+    <style>
+        /*
+            >>> Tipos de caixa <<<
+            1 - Content-box: Caixa padrao (tamanho do conteudo)
+            2 - Border-box: Caixa com borda
+            3 - Margin-box: Caixa com margem
+            4 - Padding-box: Caixa com padding
+
+            >>> Propriedades de caixa <<<
+            1 - width
+            2 - height
+            3 - border
+            4 - margin
+            5 - padding
+
+            >>> Caixa do tipo box-level <<<
+            <div>
+            <h1>
+            <p>
+            <main>
+            <header>
+            <nav>
+            <section>
+            <article>
+            <aside>
+            <footer>
+            <form>
+            <video>
+            
+            >>> Caixa do tipo inline-level <<<
+            <a>
+            <span>
+            <img>
+            <input>
+            <button>
+            <label>
+            <select>
+            <sup>
+            <sub>
+            <code>
+            <em>
+            <strong>
+            <small>
+            <q>
+            <var>
+            <time>
+            <mark>
+        */
+        h1 { /* block-level */
+            height: 100px;
+            width: 300px;
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+
+            padding: 10px 20px;
+
+            margin: 10px auto 20px auto;
+
+            outline: 10px dotted red;
+
+        }
+        a { /* inline-level */
+            border: 4px solid red;
+            padding: 4px;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, similique? Ullam in ducimus temporibus iusto nostrum iste architecto! Sequi iusto eum aspernatur consectetur fugiat hic quos adipisci doloremque laboriosam corporis.</p>
+    <a href="#">Link</a>
+</body>
+</html>

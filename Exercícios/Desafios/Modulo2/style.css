@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+/*
+        Essa é a função :root, que serve para definir variáveis para o CSS.
+        Ela funciona da seguinte maneira:
+        - Ela é uma pseudo-classe, que é uma classe que não precisa ser chamada no HTML, pois é automaticamente aplicada ao seletor que a precede.
+        - Nesse caso, como o seletor é :root, as variáveis definidas aqui estarão disponíveis para todos os elementos da página.
+        - As variáveis são definidas com o prefixo --, e podem ser utilizadas com a propriedade var(), passando o nome da variável como parâmetro.
+        - Por exemplo, para usar a cor --cor1, basta usar a propriedade background-color: var(--cor1);
+
+        :root {
+            --cor0: #31580f;
+            --cor1: #a2e06c;
+            --cor2: #1f8a3d;
+            --cor3: #31580f;
+            --cor4: #a2e06c;
+            --cor5: #1f8a3d;
+
+            --fonte-padrao: Arial, Helvetica, sans-serif;
+            --fonte-destaque: 'Edu AU VIC WA NT Arrows', sans-serif;
+            --fonte-destaque2: 'Libre Baskerville', serif;
+            --fonte-destaque3: 'Oswald', sans-serif;
+            --fonte-destaque4: 'Yuji Mai', serif;
+            --fonte-destaque5: 'Share Tech', sans-serif;
+
+    }
+     */
+body {
+    background-color: rgb(166, 247, 159);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 70, 70);
+    background: linear-gradient(to top, #31580f , #a2e06c);
+    text-align: juntify;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+
+}
+div {
+    background-color: rgb(15, 126, 5);
+}
+aside {
+    text-align: justify;
+    background-color: rgb(173, 197, 171);
+    border-radius: 10px;
+}
+nav {
+    padding: 3px;
+    border-radius: 10px;
+    font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+    a {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        text-decoration: none;
+        font-weight: bolder;
+        color: rgb(124, 170, 255);
+    }
+    a:hover {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        text-decoration: none;
+        font-weight: bolder;
+        color: rgb(127, 91, 255);
+    }
+    a:active {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        text-decoration: none;
+        font-weight: bolder;
+        color: rgb(172, 108, 72);
+    }
+/* a:visited {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        text-decoration: none;
+        font-weight: bolder;
+        color: rgb(16, 10, 97);
+    }
+*/
+}
+footer {
+    background-color: rgb(69, 214, 56);
+    padding: 0px;
+    border-radius: 5px;
+}
+h1 {
+    font-family: Oswald, sans-serif;
+    color: rgb(4, 68, 14);
+    text-align: center;
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+h1#principal {
+    font-family: 'Share Tech', sans-serif;
+    font-style: italic bolder;
+    color: rgb(241, 245, 243);
+    font-size: calc(35px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+h2 {
+    font-family: Oswald, sans-serif;
+    color: rgb(15, 102, 41);
+
+}
+h3#extra {
+    color: white;
+    background-color: rgb(15, 102, 41);
+    border: 10px solid rgb(15, 102, 41);
+    border-radius: 10px 10px 0px 0px;
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    padding: 10px;
+}
+p#principal {
+    color: rgb(243, 243, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    font-size: calc(15px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    padding: 10px;
+}
+li {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+/* o seletor picture seleciona a tag picture e aplica estilos, 
+   nesse caso esta definindo que a imagem sera exibida em 
+   100% da largura da tela e sua altura sera ajustada automaticamente */
+picture {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* o justify-content: center; serve para centralizar a imagem horizontalmente */
+    justify-content: center;
+    /* o align-items: center; serve para centralizar a imagem verticalmente */
+    align-items: center;
+    /* o overflow: hidden; serve para esconder a imagem caso ela ultrapasse o tamanho do container */
+    overflow: hidden;
+}
+
+/* o seletor picture img seleciona a tag img dentro da tag picture e aplica estilos */
+picture img {
+    /* o max-width: 100%; serve para limitar a largura da imagem a 100% do container */
+    max-width: 100%;
+    /* o height: auto; serve para ajustar automaticamente a altura da imagem */
+    height: auto;
+    /* o object-fit: cover; serve para manter a proporcionalidade da imagem e ajusta-la ao tamanho do container */
+    object-fit: cover;
+}
+
+/* o seletor .responsive-iframe seleciona a classe responsive-iframe e aplica estilos */
+.responsive-iframe {
+    /* o position: relative; serve para posicionar o iframe relativo ao container */
+    position: relative;
+    /* o width: 97%; serve para definir a largura do iframe em 97% do container */
+    width: 97%;
+    /* o height: 0; serve para definir a altura do iframe como 0, pois sera ajustada posteriormente */
+    height: 0;
+    /* o padding-bottom: 35.25%; serve para definir a altura do iframe como 35.25% do container, 
+       essa proporcionalidade e necessaria para manter o aspect ratio da imagem */
+    padding-bottom: 35.25%; /* 16:9 aspect ratio */
+}
+
+/* o seletor .responsive-iframe iframe seleciona a tag iframe dentro da classe responsive-iframe e aplica estilos */
+.responsive-iframe iframe {
+    /* o position: absolute; serve para posicionar o iframe absoluto em relacao ao container */
+    position: absolute;
+    /* o width: 100%; serve para definir a largura do iframe como 100% do container */
+    width: 100%;
+    /* o height: 100%; serve para definir a altura do iframe como 100% do container */
+    height: 100%;
+    /* o border: 10px solid rgb(15, 102, 41); serve para adicionar um border ao iframe com a cor e espessura especificada */
+    border: 10px solid rgb(15, 102, 41);
+   
+}
