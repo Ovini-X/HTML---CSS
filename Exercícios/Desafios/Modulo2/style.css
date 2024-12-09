@@ -60,25 +60,25 @@ aside {
 nav {
     padding: 3px;
     border-radius: 10px;
-    font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(15px + (20 - 14) * ((100vw - 200px) / (1600 - 400)));
 
     a {
         font-family: 'Times New Roman', Times, serif;
-        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(15px + (20 - 14) * ((100vw - 200px) / (1600 - 400)));
         text-decoration: none;
         font-weight: bolder;
         color: rgb(124, 170, 255);
     }
     a:hover {
         font-family: 'Times New Roman', Times, serif;
-        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(15px + (20 - 14) * ((100vw - 200px) / (1600 - 400)));
         text-decoration: none;
         font-weight: bolder;
         color: rgb(127, 91, 255);
     }
     a:active {
         font-family: 'Times New Roman', Times, serif;
-        font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(15px + (20 - 14) * ((100vw - 200px) / (1600 - 400)));
         text-decoration: none;
         font-weight: bolder;
         color: rgb(172, 108, 72);
